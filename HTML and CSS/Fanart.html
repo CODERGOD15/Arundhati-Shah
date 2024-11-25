@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!!ARU SHAH FANPAGE!!</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 10;
+            background-color: #FFFAE3;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #FF6F61;
+            text-shadow: 2px 2px 5px #FFD700;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #FF6F61;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #FF9E80;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        /* Fanfiction Section */
+        .fanfiction, .fanart {
+            background: #FFF5E1;
+            border-radius: 15px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .fanfiction p, .fanart p {
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background: #FF6F61;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .read-more:hover {
+            background: #ffd900c7;
+            color: #FF6F61;
+        }
+
+        /* Fanart Gallery */
+        .fanart-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .fanart-gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .fanart-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: #FF9E80;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#fanfiction">Fanfiction</a>
+        <a href="#fanart">Fanart</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Aru Shah Fan Page</h1>
+
+        <!-- Fanfiction Section -->
+        <section id="fanfiction" class="fanfiction">
+            <h2>The Books on Amazon</h2>
+            <p>
+            So if you've made the desicion to read the books click on the button below and you should find plenty of amazon links for the books and this can also help if you're still reading the series it could show you the next book.
+            </p>
+            <a href="Book references.html" class="read-more">Read The Books Here!</a>
+        </section>
+
+        <!-- Fanart Section -->
+        <section id="fanart" class="fanart">
+            <h2>Fanart</h2>
+            <p>
+                Celebrate the artistry of fans who bring the world of Aru Shah to life! Explore colorful depictions of your favorite characters and magical settings.
+            </p>
+            <div class="fanart-gallery">
+                <img src="https://via.placeholder.com/150" alt="Fanart 1">
+                <img src="https://via.placeholder.com/150" alt="Fanart 2">
+                <img src="https://via.placeholder.com/150" alt="Fanart 3">
+                <img src="https://via.placeholder.com/150" alt="Fanart 4">
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Aru Shah Fan Page. All rights reserved.
+    </footer>
+</body>
+</html>

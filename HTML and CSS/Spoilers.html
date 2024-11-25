@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aru Shah Spoilers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #cc0202, #330000);
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: scroll;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-top: 50px;
+            color: #ff4500;
+            text-shadow: 0 0 20px rgba(255, 69, 0, 0.6), 0 0 40px rgba(255, 69, 0, 0.8);
+            animation: textGlow 2s ease-in-out infinite alternate;
+        }
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px rgba(255, 69, 0, 0.8);
+            }
+            100% {
+                text-shadow: 0 0 20px #ff4500, 0 0 40px #ff6347, 0 0 60px #ff4500;
+            }
+        }
+        .spoiler-alert {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 12px;
+            font-size: 1.2em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            width: 80%;
+            max-width: 900px;
+            animation: fadeInAlert 1s ease-out;
+        }
+        @keyframes fadeInAlert {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .spoiler-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            animation: fadeInSection 0.8s ease-in-out;
+        }
+        @keyframes fadeInSection {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .spoiler-title {
+            font-size: 1.8em;
+            color: #ff6347;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+        .spoiler-title:hover {
+            color: #ffd700;
+        }
+        .spoiler-title::after {
+            content: "▶";
+            position: absolute;
+            right: -40px;
+            top: 0;
+            font-size: 1.5em;
+            color: #ff6347;
+            opacity: 0.7;
+            transition: transform 0.3s ease;
+        }
+        .spoiler-title:hover::after {
+            transform: rotate(90deg);
+        }
+        .spoiler-content {
+            display: none;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #dcdcdc;
+            animation: fadeInContent 0.5s ease-in-out;
+        }
+        @keyframes fadeInContent {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .scrollbar-container {
+            width: 10px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        .scrollbar-thumb {
+            width: 100%;
+            background-color: #ff6347;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .scrollbar-thumb:hover {
+            background-color: #ff4500;
+        }
+        .spoiler-section:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(transparent, rgba(255, 69, 0, 0.7));
+            border-radius: 10px;
+            opacity: 0.3;
+        }
+        .fog {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/foggy-day.png');
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: -1;
+            animation: fadeInFog 3s ease-in-out infinite alternate;
+        }
+        @keyframes fadeInFog {
+            0% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.2;
+            }
+        }
+    </style>
+    <script>
+        function toggleSpoilerContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Aru Shah Spoilers</h1>
+
+    <div class="spoiler-alert">
+        <p>⚠️ Warning: This page contains major spoilers for *Aru Shah* series! Proceed only if you're ready to uncover the secrets!</p>
+    </div>
+
+    <div class="spoiler-section">
+        <h2 class="spoiler-title" onclick="toggleSpoilerContent('spoiler1')">1. Kara's True Identity</h2>
+        <div class="spoiler-content" id="spoiler1">
+            <p>Aru discovers at the end of *Aru Shah and the Golden City* that Kara was not just adopted by the Sleeper but was actually her biological sister. Kara is the reincarnation of the great warrior "Karna" from the Mahabharata. This revelation 
+                creates tension between Aru and Kara, as their fate intertwines in ways neither expected.</p>
+        </div>
+    </div>
+
+    <div class="spoiler-section">
+        <h2 class="spoiler-title" onclick="toggleSpoilerContent('spoiler2')">2. The Meaning of Aiden's Prophecy</h2>
+        <div class="spoiler-content" id="spoiler2">
+            <p>In the last book, when Aiden receives the prophecy, it foretells: "The girl you love will be the death of you." The meaning becomes clear when Aru is forced to sacrifice herself in the realm of Nidra, but Aiden steps in, willing to take her place. 
+                This act fulfills the prophecy, but in a surprising twist, it also leads to further complications.</p>
+        </div>
+    </div>
+
+    <div class="spoiler-section">
+        <h2 class="spoiler-title" onclick="toggleSpoilerContent('spoiler3')">3. The Fate of the Sleeper</h2>
+        <div class="spoiler-content" id="spoiler3">
+            <p>The Sleeper, who was once a revered and powerful figure, meets a tragic end when Kara, misunderstanding the situation, strikes him down. In a final moment of realization, Aru learns that while they may have been enemies, the choices they made were 
+                what truly shaped their fates, intertwining their paths in ways that can't be undone.</p>
+        </div>
+    </div>
+
+    <div class="scrollbar-container">
+        <div class="scrollbar-thumb"></div>
+    </div>
+
+    <div class="fog"></div>
+
+</body>
+</html>
+
+

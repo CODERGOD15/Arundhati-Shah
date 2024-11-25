@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aru Shah Prophecies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Karma:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Karma', serif;
+            background: radial-gradient(circle, #330000 20%, #1e1e1e);
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5em;
+            color: #ffd700;
+            text-align: center;
+            margin-top: 50px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 69, 0, 0.8);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ff4500; }
+            100% { text-shadow: 0 0 20px #ffd700, 0 0 40px #ff4500; }
+        }
+
+        .prophecy-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #330000, #550000);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            position: relative;
+            color: #ffd700;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .prophecy-title {
+            font-size: 1.8em;
+            color: #ffd700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+
+        .prophecy-title:hover {
+            color: #ff4500;
+        }
+
+        .prophecy-title::after {
+            content: "▼";
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+            color: #ffd700;
+        }
+
+        .prophecy-content {
+            display: none;
+            color: #fff;
+            padding-top: 10px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .prophecy-container.open .prophecy-title::after {
+            transform: rotate(180deg);
+            color: #ff4500;
+        }
+
+        .prophecy-container.open .prophecy-content {
+            display: block;
+        }
+
+        .decorative-border {
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border: 3px solid #ffd700;
+            border-radius: 15px;
+            pointer-events: none;
+            animation: borderGlow 2s linear infinite alternate;
+        }
+
+        @keyframes borderGlow {
+            0% { border-color: #ff4500; }
+            100% { border-color: #ffd700; }
+        }
+
+        .symbol {
+            font-size: 2.5em;
+            color: #ff4500;
+            position: absolute;
+            top: -35px;
+            left: -35px;
+            transform: rotate(30deg);
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+    <script>
+        function toggleProphecyContent(element) {
+            element.classList.toggle("open");
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Aru Shah Prophecies</h1>
+
+    <div class="prophecy-container" onclick="toggleProphecyContent(this)">
+        <span class="symbol">🕉️</span>
+        <h2 class="prophecy-title">Prophecy 1: " Aiden Acharaya, The girl you love will be the death of you."</h2>
+        <div class="prophecy-content">
+            <p>This prophecy deeply affects Aiden as it foreshadows an ominous fate with someone he cares about. Over time, he learns the prophecy speaks to sacrifice, but its true meaning unfolds in unexpected ways during his journey.</p>
+        </div>
+        <div class="decorative-border"></div>
+    </div>
+
+    <div class="prophecy-container" onclick="toggleProphecyContent(this)">
+        <span class="symbol">🌕</span>
+        <h2 class="prophecy-title">Prophecy 2: "You are bound by blood, yet you must break the bond to find the light."</h2>
+        <div class="prophecy-content">
+            <p>Aru and Kara’s bond as sisters ties their fates, yet it is a complex relationship filled with conflict. This prophecy hints at the challenges they must overcome to bring harmony and enlightenment to both their paths.</p>
+        </div>
+        <div class="decorative-border"></div>
+    </div>
+
+    <div class="prophecy-container" onclick="toggleProphecyContent(this)">
+        <span class="symbol">🔥</span>
+        <h2 class="prophecy-title">Prophecy 3: “When the fire meets the dark, only one shall rise. The other must fall to make it so. One sister raised by the Sleeper, the other by fate. One sister a soul divided, the other whole. One sister from the heavens, the other from the depths. Together they can open the door to the heavens. Together they can raise the one who slumbers. And together they can... destroy each other.”</h2>
+        <div class="prophecy-content">
+            <p>This prophecy refers to the climactic battle between light and darkness, symbolized by Aru and her enemies. It signifies that sacrifices must be made, and only one side will prevail when their powers collide.</p>
+        </div>
+        <div class="decorative-border"></div>
+    </div>
+
+    <div class="prophecy-container" onclick="toggleProphecyContent(this)">
+        <span class="symbol">🪔</span>
+        <h2 class="prophecy-title">Prophecy 4: "The Sleeper’s daughter walks the earth,
+            A sister, untrue since the day of her birth.
+            To wake the ancient one from dreamless sleep,
+            A sister's betrayal will cut most deep.
+            One sister will turn against the others,
+            And from her actions, doom will hover."</h2>
+        <div class="prophecy-content">
+            <p>This line foreshadows a climactic conflict where Kara may turn on Aru and her friends, possibly due to manipulation or her own unresolved conflicts. The "doom" hanging over them symbolizes the potential chaos or tragedy that could result from her actions.</p>
+        </div>
+        <div class="decorative-border"></div>
+    </div>
+
+</body>
+</html>

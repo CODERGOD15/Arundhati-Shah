@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sleeper - Aru Shah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #410000, #000000);
+            color: #f4f4f4;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        /* Glowing Title */
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            color: #ff4500;
+            text-align: center;
+            text-shadow: 0 0 30px rgba(255, 69, 0, 0.8), 0 0 50px rgba(255, 69, 0, 0.9);
+            animation: glowText 2s ease-in-out infinite alternate;
+            margin-bottom: 30px;
+        }
+
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 30px #ff4500, 0 0 60px #ff4500, 0 0 90px rgba(255, 69, 0, 0.8);
+            }
+            100% {
+                text-shadow: 0 0 60px #ff4500, 0 0 100px #ff4500, 0 0 150px rgba(255, 69, 0, 0.9);
+            }
+        }
+
+        /* Section Containers */
+        .section {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px 0;
+            padding: 25px;
+            background-color: rgba(30, 30, 30, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            transition: transform 0.3s ease;
+            transform: translateY(15px);
+        }
+
+        .section:hover {
+            transform: translateY(0);
+        }
+
+        /* Section Headings */
+        .section h2 {
+            font-size: 2.5em;
+            color: #ff4500;
+            position: relative;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section h2:after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: #8b0000;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Content Styling */
+        .section p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #dcdcdc;
+            padding: 15px 0;
+            text-align: justify;
+        }
+
+        /* Highlight text */
+        .highlight {
+            color: #ff4500;
+            font-weight: bold;
+        }
+
+        /* Image Styling */
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 20px;
+            border: 5px solid #ff4500;
+            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.7);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Dynamic Glow Effects */
+        .image-container:hover img {
+            box-shadow: 0 0 20px rgba(255, 69, 0, 1), 0 0 50px rgba(255, 69, 0, 0.7);
+        }
+
+        /* Fog Animation */
+        .fog {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/foggy-day.png');
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: -1;
+            animation: fogAnimation 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes fogAnimation {
+            0% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0.3;
+            }
+        }
+
+        /* Scroll Effect */
+        .scrollable-section {
+            max-height: 250px;
+            overflow-y: auto;
+            padding-right: 15px;
+            scrollbar-width: thin;
+        }
+
+        .scrollable-section::-webkit-scrollbar {
+            width: 8px;
+            background-color: rgba(50, 50, 50, 0.7);
+        }
+
+        .scrollable-section::-webkit-scrollbar-thumb {
+            background-color: #ff4500;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            color: #dcdcdc;
+            font-size: 1.1em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Title -->
+    <h1>The Sleeper</h1>
+    <div class="fog"></div>
+
+    <!-- Section 1: The Past -->
+    <div class="section">
+        <h2>Before the Darkness</h2>
+        <p>The Sleeper, born as <span class="highlight">Suyodhana</span>, was once a brilliant mind whose aspirations reached the heavens. Driven by a desire to protect those he loved, he pursued forbidden knowledge to challenge the celestial beings. His tragic flaw? His ambitions surpassed his understanding of power...</p>
+    </div>
+
+    <!-- Section 2: The Descent into Shadows -->
+    <div class="section">
+        <h2>The Descent into Shadows</h2>
+        <div class="scrollable-section">
+            <p>The Sleeper’s journey was tainted by his betrayal of the divine forces. Once a beloved hero, his corrupted path led him down into the depths of darkness. As he grew in strength, so did his desire to surpass even the gods...</p>
+            <p>Feared by many, revered by few, his actions resonate in the hearts of those who dare defy fate. A tragic anti-villain, the Sleeper was not simply evil; he was a product of a broken system.</p>
+        </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-container">
+        <img src="c:\Users\user\Downloads\Suyodhana.webp" alt="The Sleeper">
+    </div>
+
+    <!-- Section 3: Powers and Legacy -->
+    <div class="section">
+        <h2>Powers Beyond the Mortal Realm</h2>
+        <p>Possessing an otherworldly combination of <span class="highlight">shadow manipulation</span> and dream manipulation, the Sleeper wields the power to invade minds and distort realities. His mastery over darkness allows him to create illusions and control the fear and desires of his enemies.</p>
+        <p>His power is not only a weapon but a curse — one that isolates him from the very world he tried to protect.</p>
+    </div>
+
+    <!-- Section 4: The Fate of Kara -->
+    <div class="section">
+        <h2>The Uncertain Legacy</h2>
+        <p>The Sleeper's greatest fear is not death, but the inheritance of his darkness by his daughter, Kara. A prodigy in her own right, Kara's fate is tied to his — a future where she must choose whether to carry the legacy of her father or forge her own path.</p>
+        <p>The world will never forget the Sleeper, but will it remember him as a hero or a villain? Only time will tell...</p>
+    </div>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All The Characters</title>
+    <style>
+        /* Body and font setup */
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #ffd700, #ff8b5f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-flicker 3s ease-in-out infinite;
+        }
+
+        /* Flicker effect for title */
+        @keyframes text-flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Intro paragraph styling */
+        p {
+            font-family: 'Courier New', monospace;
+            max-width: 700px;
+            font-size: 1.1em;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Button container layout */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Button style with enhanced glassmorphism */
+        .character-button {
+            width: 280px;
+            padding: 15px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            transition: transform 0.4s, background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .character-button:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Button colors */
+        .main-characters {
+            background-color: rgba(255, 215, 0, 0.3);
+            border: 2px solid rgba(255, 215, 0, 0.6);
+        }
+
+        .secondary-characters {
+            background-color: rgba(30, 144, 255, 0.3);
+            border: 2px solid rgba(30, 144, 255, 0.6);
+        }
+
+        .tertiary-characters {
+            background-color: rgba(255, 140, 0, 0.3);
+            border: 2px solid rgba(255, 140, 0, 0.6);
+        }
+
+        .antagonists {
+            background-color: rgba(50, 205, 50, 0.3);
+            border: 2px solid rgba(50, 205, 50, 0.6);
+        }
+
+        /* Subtle glow effect */
+        .character-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+            transition: opacity 0.4s;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .character-button:hover::before {
+            opacity: 1;
+            transform: rotate(30deg);
+        }
+
+        /* Animation for elements */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .character-button {
+                width: 220px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>All The Characters</h1>
+
+<p>
+    The Aru Shah series is packed with intricate characters and epic adventures, each more fascinating than the last. 
+    To make it easier for you to get to know everyone in this vast universe, I’ve sorted them into four main categories: 
+    Main Characters, Secondary Characters, Tertiary Characters, and Antagonists. Just click on the category you’re 
+    interested in, and you’ll step into a treasure trove of backstories, secrets, and powers! So, get ready to dive 
+    deep into the Pandava realms and discover your new favorite personalities!
+</p>
+
+<!-- Button Navigation Section -->
+<div class="button-container">
+    <a href="Main Characters.html" class="character-button main-characters">Main Characters</a>
+    <a href="Secondary Characters.html" class="character-button secondary-characters">Secondary Characters</a>
+    <a href="Tertiary.html" class="character-button tertiary-characters">Antagonists</a>
+ 
+</div>
+
+</body>
+</html>
+
